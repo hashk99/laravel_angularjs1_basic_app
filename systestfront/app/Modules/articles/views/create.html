@@ -1,0 +1,38 @@
+<div id="article_loop_outer_wrap" class="container"  ng-controller="CreateArticleController">
+	 
+	<div class="page-header">
+    	<h1><span class="glyphicon glyphicon-tower"></span>Create article</h1>
+  	</div>
+
+  <!-- SHOW ERROR/SUCCESS MESSAGES -->
+  <div id="messages" ng-show="message">{{ message }}</div>
+
+  <!-- FORM -->
+  <form ng-submit="processForm()">
+    <!-- title -->
+    <div id="name-group" class="form-group">
+      <label>title</label>
+      <input type="text" ng-model="title" class="form-control" placeholder="title here" required="true">
+      <span class="help-block"></span>
+    </div>
+
+    <!-- description -->
+    <div id="superhero-group" class="form-group">
+      <label>description</label>
+      <textarea ng-model="description" class="form-control" placeholder="description here" required="true">
+      	
+      </textarea> 
+      <span class="help-block"></span>
+    </div>
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-success btn-lg btn-block">
+      <span class="glyphicon glyphicon-flash"></span> Submit!
+    </button>
+  </form>
+</div>
+
+<!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
+<pre>
+    {{ formData }}
+</pre>

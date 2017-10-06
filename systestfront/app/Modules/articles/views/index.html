@@ -1,0 +1,24 @@
+<div id="article_loop_outer_wrap" class="container"  ng-controller="ArticleController">
+	<div class="panel panel-default" ng-init="getAllArticles()">
+
+  	<div class="panel-heading">All articles</div>
+  		<div class="panel-body " > 
+	        <div class="single_article_on_loop_outerwrap" ng-repeat="article in articles" >
+	            	
+					<div class="page-header">
+						<a href="#single-article/{{article.id}}">
+			              <button class="btn btn-primary" type="button">
+						    View <span class="badge">{{article.id}}</span>
+						  </button>
+						</a> 
+					  <h4>{{article.title}} <small> by -  {{article.author.name}}</small></h4>
+					</div>  
+	           		<p>Description - {{article.description}}</p> 
+	              	<div class="clearfix"></div>
+	              	<div> Comments count - <span class="badge">{{(article.comments.length > 0) ? article.comments.length : 0}}</span> </div>
+	              	<div class="clearfix"></div>
+	             	<div class="">Created at - {{article.created_at.date}}</div> 
+	              	<div class="clearfix"></div>
+	        </div>  
+    	</div>
+</div>

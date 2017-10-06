@@ -1,0 +1,23 @@
+.header{
+	background-color: #dfdfdf;
+	margin-bottom:50px;
+	color: #fff !important;
+	padding: 10px;
+	padding-top: 50px;
+
+} 
+.menu-item{
+	color: #fff;
+}
+.single_article_on_loop_outerwrap{
+	padding: 5px;
+	border: solid 1px #aaa;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.comments_loop_single_wrap{
+	border: solid 1px #dcdcdc;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 10px;
+}

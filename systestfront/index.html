@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="myapp">
+   
+   <head>
+      <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="http://localhost/systestfront/assets/css/styles.css"/>
+ 
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+      <script src = "//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-route.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+      <script src="app/main.js"></script>
+      <script src="app/filters.js"></script>
+      
+
+      <script src="app/Services/data-factory.js"></script>
+      <script src="app/Services/services.js"></script>  
+      <script src="app/Modules/parent-controller.js"></script>
+      <script src="app/Modules/articles/controller/articles-controller.js"></script> 
+      <script src="app/Modules/articles/controller/create-article-controller.js"></script> 
+      <script src="app/Modules/articles/controller/single-article-controller.js"></script> 
+      <script src="app/Modules/articles/services/article-service.js"></script> 
+
+
+      <script src="app/Modules/comments/controllers/create-comment-controller.js"></script>
+      <script src="app/Modules/comments/services/comment-service.js"></script>  
+
+      <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   </head>
+   
+   <body ng-controller="ParentController" >
+      <div class="header">
+         <ul class="nav nav-pills">
+           <li role="presentation" class="active"><a href="#articles">All Articles</a></li>
+           <li role="presentation"><a href="#new-article">create new artcle</a></li> 
+         </ul>
+
+      </div> 
+
+      <ng-view></ng-view>
+   </body>
+</html>
